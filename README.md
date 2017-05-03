@@ -1,10 +1,10 @@
-#Instant Photo Procesing System
+# Instant Photo Procesing System
 
 A cél egy olyan azonnali fotófeldolgozó rendszer létrehozása volt, melynek részeit egy Digitális Tükörreflexes fényképezőgép, egy Toshiba FlashAir SD kártya, és egy okostelefonos alkalmazás képezi. Az alkalmazás lehetőséget ad arra, hogy az fényképezőgéppel készített kép azonnal, vezeték nélküli kapcsolaton megjelenjen az alkalmazásban, és innen a felhasználó azonnal megoszthassa különböző felületeken.
 
-##SD kártya API
+## SD kártya API
 Az API alábbi részeit használjuk az alkalmazásban.
-###Command.cgi
+### Command.cgi
 A http://SDIPCÍM/command.cgi?op=100&DIR=/DCIM paranccsal kilistázhatjuk a „DCIM” nevű mappa tartalmát. A következő, vesszővel tagolt formátumban adja meg az adott könyvtárban lévő fájlokat.
 LANSD_FILELIST
 /DCIM,100WLAN0,w,xx,yyyyy,zzzzz
@@ -14,7 +14,7 @@ Az op értékét változtatva más információkat is lekérdezhetünk, példáu
 Részletes dokumentáció:
 https://flashair-developers.com/en/documents/api/commandcgi/
 
-###thumbnail.cgi
+### thumbnail.cgi
 Kisméretű, vezetéknélküli kapcsolaton gyorsabban átvihető méretben adja vissza az adott állományt. A „Távoli könyvtár” nézetben, ahol a kártyán lévő összes képet meg kell jeleníteni, az alkalmazás e parancs segítségével kérdezi le a nagyméretű képek kisméretű változatát.
 A Például:
 http://flashair/thumbnail.cgi?/DCIM/100__TSB/DSC_100.JPG
